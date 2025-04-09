@@ -1,0 +1,25 @@
+.calculator {
+  width: 320px;
+  background: #1c1c1c;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 50px auto;
+}
+
+.mode-indicator {
+  color: #00ff00;
+  font-size: 0.9em;
+  text-align: left;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-family: 'Digital', monospace;
+  background: #333;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .calculator {
+    width: 400px;
+  }
+} 

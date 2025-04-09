@@ -1,0 +1,71 @@
+.calculator-keypad {
+  display: grid;
+  gap: 10px;
+}
+
+.keypad-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background: #333;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2em;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 50px;
+}
+
+/* Scientific function buttons */
+.scientific button {
+  background: #2c3e50;
+  font-size: 1em;
+}
+
+/* Mode button */
+.mode-btn {
+  background: #27ae60 !important;
+  font-weight: bold;
+}
+
+/* Memory function buttons */
+.memory button {
+  background: #34495e;
+}
+
+/* Clear buttons */
+.clear-btn {
+  background: #e74c3c !important;
+  font-weight: bold;
+}
+
+/* Constant button */
+.constant-btn {
+  background: #8e44ad !important;
+  font-weight: bold;
+}
+
+/* Operation buttons */
+.operation-btn {
+  background: #ff9500 !important;
+}
+
+/* Hover states */
+button:hover {
+  filter: brightness(120%);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Number buttons */
+button:not(.scientific button):not(.memory button):not(.operation-btn):not(.constant-btn):not(.clear-btn):not(.mode-btn) {
+  background: #4a4a4a;
+} 
